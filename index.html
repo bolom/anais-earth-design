@@ -4,491 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anaïs Salomon-Fréchou - Landscape Architect & Ecological Engineer</title>
-    <meta name="description" content="Anaïs Salomon-Fréchou, Landscape Architect & Ecological Engineer, founder of Anais.EARTH. Sustainable landscapes rooted in ecology and nature-based solutions.">
+    <title>Anaïs Salomon-Fréchou</title>
+    <meta name="description" content="Landscape Architect & Ecological Engineer">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS Variables */
-        :root {
-            --primary-green: #01c049;
-            --white: #ffffff;
-            --light-green: rgba(1, 192, 73, 0.1);
-            --dark-text: #2d3748;
-            --gray-text: #718096;
-            --light-gray: #f7fafc;
-            --border-color: #e2e8f0;
-        }
-
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: var(--dark-text);
-            background-color: var(--white);
+            color: #333;
+            background: #fff;
         }
 
-        /* Typography */
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-
-        /* Container and Layout */
         .container {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 0 1.5rem;
+            padding: 2rem;
         }
 
-        section {
+        .hero {
+            text-align: center;
             padding: 4rem 0;
         }
 
-        /* Header / Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--white) 0%, var(--light-green) 100%);
-            text-align: center;
-            padding: 3rem 0 4rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="leaves" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="2" fill="%2301c049" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23leaves)"/></svg>') repeat;
-            z-index: 0;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
         .logo {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             margin: 0 auto 2rem;
             display: block;
-            border-radius: 50%;
-            box-shadow: 0 10px 30px rgba(1, 192, 73, 0.2);
-            transition: transform 0.3s ease;
         }
 
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .hero-title {
-            color: var(--dark-text);
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
             margin-bottom: 0.5rem;
+            color: #333;
         }
 
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: var(--primary-green);
-            font-weight: 500;
-            margin-bottom: 1.5rem;
+        .subtitle {
+            font-size: 1.1rem;
+            color: #01c049;
+            margin-bottom: 3rem;
+            font-weight: 300;
         }
 
-        .hero-description {
-            font-size: 1.2rem;
-            color: var(--gray-text);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Bio Section */
         .bio {
-            background: var(--white);
-            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+            color: #555;
         }
 
-        .bio-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .bio h2 {
-            color: var(--primary-green);
-        }
-
-        .bio-text {
-            font-size: 1.2rem;
-            color: var(--dark-text);
-            font-style: italic;
-            background: var(--light-green);
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 4px solid var(--primary-green);
-        }
-
-        /* Expertise Section */
         .expertise {
-            background: var(--light-gray);
-        }
-
-        .expertise h2 {
-            text-align: center;
-            color: var(--primary-green);
             margin-bottom: 3rem;
         }
 
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .expertise-item {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 15px;
+        .expertise ul {
+            list-style: none;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid var(--primary-green);
         }
 
-        .expertise-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        .expertise-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--primary-green);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.5rem;
-            color: var(--white);
-        }
-
-        .expertise-item h3 {
-            color: var(--dark-text);
+        .expertise li {
+            font-size: 1rem;
             margin-bottom: 0.5rem;
+            color: #666;
         }
 
-        .expertise-item p {
-            color: var(--gray-text);
-            font-size: 1rem;
-        }
-
-        /* Call to Action Section */
-        .cta {
-            background: linear-gradient(135deg, var(--primary-green) 0%, #00a83d 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .cta h2 {
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
-
-        .cta p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-            cursor: pointer;
-            border: 2px solid transparent;
-        }
-
-        .btn-primary {
-            background: var(--white);
-            color: var(--primary-green);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--white);
-            border-color: var(--white);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border-color: var(--white);
-        }
-
-        .btn-secondary:hover {
-            background: var(--white);
-            color: var(--primary-green);
-        }
-
-        /* Contact Section */
         .contact {
-            background: var(--white);
-        }
-
-        .contact h2 {
             text-align: center;
-            color: var(--primary-green);
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--light-gray);
-            border-radius: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-3px);
-        }
-
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--primary-green);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.2rem;
-            color: var(--white);
-        }
-
-        .contact-item h3 {
-            color: var(--dark-text);
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item a {
-            color: var(--primary-green);
+        .contact a {
+            color: #01c049;
             text-decoration: none;
-            font-weight: 500;
+            font-size: 1.1rem;
+            margin: 0 1rem;
         }
 
-        .contact-item a:hover {
+        .contact a:hover {
             text-decoration: underline;
         }
 
-        /* Footer */
-        .footer {
-            background: var(--dark-text);
-            color: var(--white);
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .footer p {
-            margin: 0;
-            opacity: 0.8;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            .container {
+                padding: 1.5rem;
             }
-
-            h2 {
+            
+            h1 {
                 font-size: 1.5rem;
             }
-
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-            }
-
-            section {
-                padding: 3rem 0;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
+            
             .logo {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
             }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 300px;
+            
+            .contact a {
+                display: block;
+                margin: 0.5rem 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header / Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="/lovable-uploads/118b3a44-813b-4a62-936b-a84e1a451871.png" alt="Anais.EARTH Logo" class="logo">
-                <h1 class="hero-title">Anaïs Salomon-Fréchou</h1>
-                <p class="hero-subtitle">Landscape Architect & Ecological Engineer</p>
-                <p class="hero-description">Creating sustainable landscapes rooted in ecology and nature-based solutions</p>
-            </div>
+    <div class="container">
+        <div class="hero">
+            <img src="/lovable-uploads/118b3a44-813b-4a62-936b-a84e1a451871.png" alt="Anais.EARTH Logo" class="logo">
+            <h1>Anaïs Salomon-Fréchou</h1>
+            <p class="subtitle">Landscape Architect & Ecological Engineer</p>
         </div>
-    </section>
 
-    <!-- Bio Section -->
-    <section class="bio">
-        <div class="container">
-            <div class="bio-content">
-                <h2>About Me</h2>
-                <div class="bio-text">
-                    <p>Founder of Anais.EARTH, I design sustainable landscapes rooted in ecology, water management, and nature-based solutions. My work bridges the gap between human needs and environmental preservation, creating spaces that nurture both communities and ecosystems.</p>
-                </div>
-            </div>
+        <div class="bio">
+            <p>Founder of Anais.EARTH, I design sustainable landscapes rooted in ecology, water management, and nature-based solutions.</p>
         </div>
-    </section>
 
-    <!-- Expertise Section -->
-    <section class="expertise">
-        <div class="container">
-            <h2>My Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-item">
-                    <div class="expertise-icon">🌿</div>
-                    <h3>Landscape Design</h3>
-                    <p>Creating harmonious outdoor spaces that blend aesthetic beauty with ecological functionality.</p>
-                </div>
-                <div class="expertise-item">
-                    <div class="expertise-icon">🌱</div>
-                    <h3>Ecological Solutions</h3>
-                    <p>Implementing nature-based approaches to environmental challenges and sustainable development.</p>
-                </div>
-                <div class="expertise-item">
-                    <div class="expertise-icon">💧</div>
-                    <h3>Water & Biodiversity</h3>
-                    <p>Designing water-sensitive landscapes that support local biodiversity and ecosystem health.</p>
-                </div>
-                <div class="expertise-item">
-                    <div class="expertise-icon">🏝️</div>
-                    <h3>Island & Coastal Planning</h3>
-                    <p>Specialized expertise in coastal and island environments, addressing unique ecological challenges.</p>
-                </div>
-            </div>
+        <div class="expertise">
+            <ul>
+                <li>Landscape Design</li>
+                <li>Ecological Solutions</li>
+                <li>Water & Biodiversity</li>
+                <li>Island & Coastal Planning</li>
+            </ul>
         </div>
-    </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Landscape?</h2>
-            <p>Let's work together to create sustainable, beautiful spaces that honor both nature and community.</p>
-            <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="mailto:contact@anais.earth" class="btn btn-secondary">Get in Touch</a>
-            </div>
+        <div class="contact">
+            <a href="mailto:contact@anais.earth">Email</a>
+            <a href="https://linkedin.com/in/anais-salomon-frechou" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/anais_earth" target="_blank">Instagram</a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="mailto:contact@anais.earth">contact@anais.earth</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/anais-salomon-frechou" target="_blank">Connect with me</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📸</div>
-                    <h3>Instagram</h3>
-                    <a href="https://instagram.com/anais_earth" target="_blank">@anais_earth</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Anaïs Salomon-Fréchou. All rights reserved. | Anais.EARTH</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
