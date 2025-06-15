@@ -11,35 +11,305 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --primary-green: #2d5a3d;
+            --accent-green: #4a7c5a;
+            --light-green: #7ba688;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #737373;
+            --bg-cream: #fdfcf8;
+            --bg-white: #ffffff;
+            --border-subtle: #e8e5e0;
+            --shadow-soft: 0 8px 32px rgba(45, 90, 61, 0.08);
+            --shadow-hover: 0 16px 48px rgba(45, 90, 61, 0.12);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #2a2a2a;
-            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            line-height: 1.65;
+            color: var(--text-dark);
+            background: var(--bg-cream);
             font-weight: 300;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        .container {
-            max-width: 600px;
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(253, 252, 248, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .header.scrolled {
+            background: rgba(253, 252, 248, 0.98);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
-            animation: fadeInUp 0.8s ease-out;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
         }
 
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--primary-green);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: color 0.3s ease;
+        }
+
+        .logo-text:hover {
+            color: var(--accent-green);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-green);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 2rem 60px;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            text-align: center;
+            animation: fadeInUp 1.2s cubic-bezier(0.2, 0, 0.2, 1);
+        }
+
+        .hero-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 3rem;
+            display: block;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-logo:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 300;
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-family: 'Crimson Text', serif;
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--accent-green);
+            margin-bottom: 3rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .hero-description {
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+            line-height: 1.7;
+            color: var(--text-medium);
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .expertise-section {
+            margin-bottom: 4rem;
+        }
+
+        .expertise-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--primary-green);
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .expertise-item {
+            background: var(--bg-white);
+            padding: 2rem 1.75rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-subtle);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expertise-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-green), var(--light-green));
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: left;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--accent-green);
+        }
+
+        .expertise-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .expertise-item h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .expertise-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            margin-top: 2rem;
+        }
+
+        .contact-cta {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-soft);
+            letter-spacing: 0.01em;
+        }
+
+        .contact-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+            background: linear-gradient(135deg, var(--accent-green), var(--primary-green));
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .social-link:hover {
+            color: var(--primary-green);
+            background: rgba(45, 90, 61, 0.05);
+        }
+
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(60px);
             }
             to {
                 opacity: 1;
@@ -48,245 +318,261 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            0%, 100% { 
+                transform: translateY(0px); 
+            }
+            50% { 
+                transform: translateY(-12px); 
+            }
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        /* Mobile Navigation */
+        .mobile-nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
         }
 
-        .hero {
-            text-align: center;
-            padding: 2rem 0 3rem;
-        }
-
-        .logo {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            display: block;
-            box-shadow: 0 8px 32px rgba(1, 192, 73, 0.15);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .logo:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 12px 40px rgba(1, 192, 73, 0.25);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.8rem, 5vw, 2.2rem);
-            font-weight: 500;
-            margin-bottom: 0.75rem;
-            color: #1a1a1a;
-            letter-spacing: -0.02em;
+        .mobile-nav-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--primary-green);
             transition: all 0.3s ease;
+            border-radius: 1px;
         }
 
-        .subtitle {
-            font-size: clamp(1rem, 3vw, 1.15rem);
-            color: #01c049;
-            margin-bottom: 3rem;
-            font-weight: 400;
-            line-height: 1.5;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 0.3s forwards;
-        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                padding: 0 1.5rem;
+                height: 70px;
+            }
 
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
+            .nav-links {
+                display: none;
+            }
 
-        .bio {
-            font-size: clamp(0.95rem, 2.5vw, 1.05rem);
-            line-height: 1.7;
-            margin-bottom: 3rem;
-            color: #555;
-            text-align: center;
-            max-width: 520px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 0.6s forwards;
-        }
+            .mobile-nav-toggle {
+                display: flex;
+            }
 
-        .expertise {
-            margin-bottom: 3rem;
-            text-align: center;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 0.9s forwards;
-        }
+            .main {
+                padding: 100px 1.5rem 40px;
+            }
 
-        .expertise h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.2rem, 3vw, 1.35rem);
-            font-weight: 500;
-            color: #01c049;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.01em;
-        }
+            .hero-logo {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 2rem;
+            }
 
-        .expertise ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 0.75rem;
-            max-width: 480px;
-            margin: 0 auto;
-        }
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
 
-        .expertise li {
-            font-size: 0.9rem;
-            color: #666;
-            padding: 0.85rem 1.25rem;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(1, 192, 73, 0.1);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: default;
-        }
-
-        .expertise li:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(1, 192, 73, 0.15);
-            border-color: rgba(1, 192, 73, 0.3);
-            background: rgba(255, 255, 255, 0.95);
-        }
-
-        .contact {
-            text-align: center;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 1.2s forwards;
-        }
-
-        .contact a {
-            color: #01c049;
-            text-decoration: none;
-            font-size: 0.95rem;
-            margin: 0.5rem 1rem;
-            font-weight: 400;
-            border-bottom: 1px solid transparent;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: inline-block;
-            position: relative;
-        }
-
-        .contact a:not(:first-child):hover {
-            border-bottom-color: #01c049;
-            transform: translateY(-1px);
-        }
-
-        .contact a:first-child {
-            background: linear-gradient(135deg, #01c049 0%, #00a03d 100%);
-            color: white;
-            padding: 0.8rem 1.8rem;
-            border-radius: 25px;
-            margin-bottom: 1rem;
-            display: inline-block;
-            font-weight: 500;
-            letter-spacing: 0.01em;
-        }
-
-        .contact a:first-child:hover {
-            background: linear-gradient(135deg, #00a03d 0%, #008c35 100%);
-            border-bottom-color: transparent;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(1, 192, 73, 0.3);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 640px) {
-            .container {
+            .expertise-item {
                 padding: 1.5rem 1.25rem;
             }
-            
-            .hero {
-                padding: 1.5rem 0 2.5rem;
+
+            .social-links {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
             }
-            
-            .logo {
-                width: 75px;
-                height: 75px;
-                margin-bottom: 1.5rem;
-            }
-            
-            .subtitle {
-                margin-bottom: 2.5rem;
-            }
-            
-            .bio {
-                margin-bottom: 2.5rem;
-            }
-            
-            .expertise {
-                margin-bottom: 2.5rem;
-            }
-            
-            .expertise ul {
-                grid-template-columns: 1fr;
-                gap: 0.6rem;
-                max-width: 100%;
-            }
-            
-            .expertise li {
-                padding: 0.75rem 1rem;
-                font-size: 0.85rem;
-            }
-            
-            .contact a:not(:first-child) {
-                display: block;
-                margin: 0.6rem 0;
+
+            .contact-cta {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
             }
         }
 
-        /* Smooth scroll behavior */
-        html {
-            scroll-behavior: smooth;
+        @media (max-width: 480px) {
+            .nav {
+                padding: 0 1rem;
+            }
+
+            .main {
+                padding: 90px 1rem 30px;
+            }
+
+            .logo-text {
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            opacity: 0.6;
+            z-index: 10;
+        }
+
+        .scroll-indicator::after {
+            content: '↓';
+            font-size: 1.5rem;
+            color: var(--accent-green);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* Hide scroll indicator when scrolled */
+        .scrolled ~ .scroll-indicator {
+            opacity: 0;
+            pointer-events: none;
         }
 
         /* Focus states for accessibility */
-        .contact a:focus {
-            outline: 2px solid #01c049;
+        .nav-link:focus,
+        .contact-cta:focus,
+        .social-link:focus {
+            outline: 2px solid var(--accent-green);
             outline-offset: 2px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <img src="/img/logo.png" alt="Anais.EARTH Logo" class="logo">
-            <h1>anais.earth</h1>
-            <p class="subtitle">Chaque lieu,<br>un écosystème vivant</p>
-        </div>
-
-        <div class="bio">
-            <p>
-                Ingénieure paysagiste, fondatrice d'anais.earth, j'imagine des paysages durables où nature, eau et territoire se rencontrent harmonieusement. Chaque projet devient un havre de biodiversité, pensé pour évoluer durablement avec le vivant.
-            </p>
-        </div>
-
-        <div class="expertise">
-            <h2>Expertises</h2>
-            <ul>
-                <li>Jardins écologiques</li>
-                <li>Gestion des eaux pluviales</li>
-                <li>Restauration de la biodiversité</li>
-                <li>Aménagements côtiers et insulaires</li>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo-text">anais.earth</a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#expertise" class="nav-link">Expertises</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </div>
 
-        <div class="contact">
-            <a href="mailto:contact@anais.earth">Discutons de votre projet</a>
-            <a href="https://www.linkedin.com/in/anais-salomon-34a9121b1" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/anais_earth/" target="_blank">Instagram</a>
+            <button class="mobile-nav-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="hero-container">
+            <img src="/img/logo.png" alt="Anais.EARTH Logo" class="hero-logo">
+            
+            <h1 class="hero-title">anais.earth</h1>
+            
+            <p class="hero-subtitle">Chaque lieu, un écosystème vivant</p>
+            
+            <div class="hero-description">
+                <p>Ingénieure paysagiste, fondatrice d'anais.earth, j'imagine des paysages durables où nature, eau et territoire se rencontrent harmonieusement. Chaque projet devient un havre de biodiversité, pensé pour évoluer durablement avec le vivant.</p>
+            </div>
+
+            <section class="expertise-section" id="expertise">
+                <h2 class="expertise-title">Mes expertises</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <h3>Jardins écologiques</h3>
+                        <p>Conception d'espaces verts durables qui favorisent la biodiversité locale et s'intègrent naturellement dans leur environnement.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Gestion des eaux pluviales</h3>
+                        <p>Solutions innovantes pour la collecte et la valorisation des eaux de pluie dans les aménagements paysagers.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Restauration de la biodiversité</h3>
+                        <p>Réhabilitation d'écosystèmes dégradés et création d'habitats pour la faune et la flore locales.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Aménagements côtiers</h3>
+                        <p>Projets spécialisés pour les environnements littoraux et insulaires, respectueux des écosystèmes marins.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <a href="mailto:contact@anais.earth" class="contact-cta">Discutons de votre projet</a>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anais-salomon-34a9121b1" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://www.instagram.com/anais_earth/" target="_blank" class="social-link">Instagram</a>
+                </div>
+            </section>
         </div>
-    </div>
+    </main>
+
+    <div class="scroll-indicator"></div>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                if (scrollIndicator) {
+                    scrollIndicator.style.opacity = '0';
+                }
+            } else {
+                header.classList.remove('scrolled');
+                if (scrollIndicator) {
+                    scrollIndicator.style.opacity = '0.6';
+                }
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Enhanced animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe expertise items for staggered animation
+        document.querySelectorAll('.expertise-item').forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(30px)';
+            item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(item);
+        });
+    </script>
 </body>
 </html>
