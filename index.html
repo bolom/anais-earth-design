@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -21,64 +21,97 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
+            line-height: 1.7;
+            color: #2a2a2a;
+            background: #fafafa;
+            font-weight: 300;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 3rem 2rem;
         }
 
         .hero {
             text-align: center;
-            padding: 4rem 0;
+            padding: 3rem 0 4rem;
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin: 0 auto 2rem;
+            margin: 0 auto 2.5rem;
             display: block;
+            box-shadow: 0 4px 20px rgba(1, 192, 73, 0.1);
         }
 
         h1 {
-            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
             font-weight: 400;
-            margin-bottom: 0.5rem;
-            color: #333;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
         }
 
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.25rem;
             color: #01c049;
-            margin-bottom: 3rem;
-            font-weight: 300;
+            margin-bottom: 4rem;
+            font-weight: 400;
+            line-height: 1.4;
         }
 
         .bio {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 3rem;
-            color: #555;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 4rem;
+            color: #4a4a4a;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .expertise {
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .expertise h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #01c049;
+            margin-bottom: 2rem;
+            letter-spacing: -0.01em;
         }
 
         .expertise ul {
             list-style: none;
-            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .expertise li {
             font-size: 1rem;
-            margin-bottom: 0.5rem;
             color: #666;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border-radius: 25px;
+            border: 1px solid #f0f0f0;
+            transition: all 0.2s ease;
+        }
+
+        .expertise li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(1, 192, 73, 0.1);
+            border-color: #01c049;
         }
 
         .contact {
@@ -90,30 +123,64 @@
             color: #01c049;
             text-decoration: none;
             font-size: 1.1rem;
-            margin: 0 1rem;
+            margin: 0 1.5rem;
+            font-weight: 400;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+            display: inline-block;
         }
 
         .contact a:hover {
-            text-decoration: underline;
+            border-bottom-color: #01c049;
+            transform: translateY(-1px);
+        }
+
+        .contact a:first-child {
+            background: #01c049;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .contact a:first-child:hover {
+            background: #00a03d;
+            border-bottom-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(1, 192, 73, 0.3);
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 1.5rem;
+                padding: 2rem 1.5rem;
             }
             
             h1 {
-                font-size: 1.5rem;
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .bio {
+                font-size: 1rem;
             }
             
             .logo {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
             
             .contact a {
                 display: block;
-                margin: 0.5rem 0;
+                margin: 0.75rem 0;
+            }
+            
+            .expertise ul {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
             }
         }
     </style>
@@ -128,13 +195,13 @@
 
         <div class="bio">
             <p>
-                Ingénieure paysagiste et fondatrice d’anais.earth, je conçois des paysages durables qui réconcilient nature, eau et territoire.<br>
-                Chaque projet devient un havre de biodiversité, pensé pour durer et s’adapter au vivant.
+                Ingénieure paysagiste et fondatrice d'anais.earth, je conçois des paysages durables qui réconcilient nature, eau et territoire.<br>
+                Chaque projet devient un havre de biodiversité, pensé pour durer et s'adapter au vivant.
             </p>
         </div>
 
         <div class="expertise">
-            <h2 style="text-align:center; color:#01c049; font-size:1.15rem; font-weight:400; margin-bottom:1rem;">Expertises</h2>
+            <h2>Expertises</h2>
             <ul>
                 <li>Jardins écologiques</li>
                 <li>Gestion des eaux pluviales</li>
@@ -150,3 +217,4 @@
         </div>
     </div>
 </body>
+</html>
