@@ -2,11 +2,12 @@
   "metadata": {
     "version": "2.0",
     "cleaned": true,
-    "total_plants": 62,
+    "total_plants": 61,
     "with_images": 62,
     "with_trefle": 49,
     "removed_invalid": 21,
-    "removed_duplicates": 1
+    "removed_duplicates": 1,
+    "removed_fungi": 1
   },
   "plants": [
     {
@@ -3298,55 +3299,6 @@
     },
     {
       "id": 35,
-      "scientificName": "Tricholoma joachimii",
-      "commonName": "Bon a",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Verified as valid species: Tricholoma joachimii Kingdom: Fungi. Phylum: Basidiomycota. Class: Agaricomycetes. Order: Agaricales. Family: Tricholomataceae.",
-      "citationIds": [],
-      "images": {
-        "main": "https://www.artsobservasjoner.no/MediaLibrary/2025/10/73d39af1-b700-453b-8d29-1d3fb064dc2b_image.jpg",
-        "gallery": [
-          "https://www.artsobservasjoner.no/MediaLibrary/2025/10/73d39af1-b700-453b-8d29-1d3fb064dc2b_image.jpg",
-          "https://www.artsobservasjoner.no/MediaLibrary/2025/10/5bd7766d-2c2f-4ec6-8057-77ade56f1aab_image.jpg",
-          "https://www.artsobservasjoner.no/MediaLibrary/2025/10/fbcd8efb-b7d8-4610-b24a-61c98029df4e_image.jpg",
-          "https://www.artsobservasjoner.no/MediaLibrary/2025/10/d7b9a4a0-2189-42b0-8732-a44577012c0e_image.jpg",
-          "https://www.artsobservasjoner.no/MediaLibrary/2024/9/a2948cf7-1ce1-4eb6-85c8-76354d90fe2b_image.jpeg"
-        ],
-        "source": "GBIF - GBIF contributors",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 5450472
-      }
-    },
-    {
-      "id": 36,
       "scientificName": "Pandanus pygmaeus",
       "commonName": "Pandanus nain",
       "nui": "",
@@ -3434,7 +3386,7 @@
       }
     },
     {
-      "id": 37,
+      "id": 36,
       "scientificName": "Chrysobalanus icaco",
       "commonName": "Icaco",
       "nui": "",
@@ -3522,7 +3474,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 37,
       "scientificName": "Bambusa vulgaris",
       "commonName": "Bambou nain",
       "nui": "",
@@ -3610,7 +3562,7 @@
       }
     },
     {
-      "id": 39,
+      "id": 38,
       "scientificName": "Quisqualis indica",
       "commonName": "Quisqualis (Rangoon creeper)",
       "nui": "",
@@ -3698,7 +3650,7 @@
       }
     },
     {
-      "id": 40,
+      "id": 39,
       "scientificName": "Dracaena marginata",
       "commonName": "Dracaena",
       "nui": "",
@@ -3785,7 +3737,7 @@
       }
     },
     {
-      "id": 41,
+      "id": 40,
       "scientificName": "Cordyline fruticosa terminalis",
       "commonName": "Cordyline",
       "nui": "",
@@ -3873,7 +3825,7 @@
       }
     },
     {
-      "id": 42,
+      "id": 41,
       "scientificName": "Furcraea foetida",
       "commonName": "Furcraea",
       "nui": "",
@@ -3961,7 +3913,7 @@
       }
     },
     {
-      "id": 43,
+      "id": 42,
       "scientificName": "Cosmos sulfureux",
       "commonName": "",
       "nui": "",
@@ -4049,7 +4001,7 @@
       }
     },
     {
-      "id": 44,
+      "id": 43,
       "scientificName": "Begonia spec.",
       "commonName": "Bégonia",
       "nui": "",
@@ -4098,7 +4050,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 44,
       "scientificName": "Eccremocarpus scaber",
       "commonName": "",
       "nui": "",
@@ -4186,7 +4138,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 45,
       "scientificName": "Pogonatherum paniceum",
       "commonName": "",
       "nui": "",
@@ -4235,7 +4187,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 46,
       "scientificName": "Secamone dilapidans",
       "commonName": "",
       "nui": "",
@@ -4284,7 +4236,7 @@
       }
     },
     {
-      "id": 48,
+      "id": 47,
       "scientificName": "Podranea ricasoliana",
       "commonName": "",
       "nui": "",
@@ -4372,7 +4324,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 48,
       "scientificName": "Aechmea weilbachii",
       "commonName": "",
       "nui": "",
@@ -4460,7 +4412,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 49,
       "scientificName": "Crinum spec.",
       "commonName": "Crinum",
       "nui": "",
@@ -4509,7 +4461,7 @@
       }
     },
     {
-      "id": 51,
+      "id": 50,
       "scientificName": "Pedilanthus thymaloides",
       "commonName": "Pédilanthus",
       "nui": "",
@@ -4557,7 +4509,7 @@
       }
     },
     {
-      "id": 52,
+      "id": 51,
       "scientificName": "Plumeria alba",
       "commonName": "",
       "nui": "",
@@ -4645,7 +4597,7 @@
       }
     },
     {
-      "id": 53,
+      "id": 52,
       "scientificName": "Roystonea regia",
       "commonName": "",
       "nui": "",
@@ -4733,7 +4685,7 @@
       }
     },
     {
-      "id": 54,
+      "id": 53,
       "scientificName": "Capraria biflora L.",
       "commonName": "Thé pays, Thé des anglais, Thé des Antilles, Thé de santé, Thé muraille, Dité péyi, Té péyi, Té miray",
       "nui": "nui_pla_00013",
@@ -4803,7 +4755,7 @@
       }
     },
     {
-      "id": 55,
+      "id": 54,
       "scientificName": "Eryngium foetidum L.",
       "commonName": "Chardon béni, Herbe à fer, Chadron béni, Chadwon béni",
       "nui": "nui_pla_00026",
@@ -4874,7 +4826,7 @@
       }
     },
     {
-      "id": 56,
+      "id": 55,
       "scientificName": "Justicia pectoralis Jacq.",
       "commonName": "Herbe charpentier, Zèb chapantié",
       "nui": "nui_pla_00036",
@@ -4904,7 +4856,7 @@
       }
     },
     {
-      "id": 57,
+      "id": 56,
       "scientificName": "Neurolaena lobata (L.) Cass.",
       "commonName": "Herbe-pique, Tabac diable, Herbe à pique, Fey-pik, Tabak-djab, Zèb a pik",
       "nui": "nui_pla_00044",
@@ -4935,7 +4887,7 @@
       }
     },
     {
-      "id": 58,
+      "id": 57,
       "scientificName": "Ocimum gratissimum",
       "commonName": "Framboisin, Fonbazen",
       "nui": "nui_pla_00045",
@@ -5005,7 +4957,7 @@
       }
     },
     {
-      "id": 59,
+      "id": 58,
       "scientificName": "Petiveria alliacea L.",
       "commonName": "Arada, Douvan nèg, Zèb senmitiè, Douvan douvan",
       "nui": "nui_pla_00048",
@@ -5037,7 +4989,7 @@
       }
     },
     {
-      "id": 60,
+      "id": 59,
       "scientificName": "Plectranthus amboinicus (Lour.) Spreng.",
       "commonName": "Gros thym, Gros baume, Gwo-ten, Gwo bom",
       "nui": "nui_pla_00049",
@@ -5068,7 +5020,7 @@
       }
     },
     {
-      "id": 61,
+      "id": 60,
       "scientificName": "Pluchea carolinensis (Jacq.) G. Don",
       "commonName": "Tabac diable, Guérit-tout, Tabak jako, Djéri-tout, Tabak diab",
       "nui": "nui_pla_00050",
@@ -5099,7 +5051,7 @@
       }
     },
     {
-      "id": 62,
+      "id": 61,
       "scientificName": "Psidium guajava L.",
       "commonName": "Goyavier, Goyave, Gwayav",
       "nui": "nui_pla_00056",
