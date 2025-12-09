@@ -1,16 +1,12 @@
 {
   "metadata": {
-    "version": "1.0",
-    "created": "2025-12-08T20:06:26.432363",
-    "description": "Normalized plant database with citations and bibliography",
-    "counts": {
-      "plants": 89,
-      "citations": 35,
-      "bibliography": 119
-    },
-    "merged": true,
-    "originalPlantCount": 89,
-    "mergedPlantCount": 84
+    "version": "2.0",
+    "cleaned": true,
+    "total_plants": 62,
+    "with_images": 62,
+    "with_trefle": 49,
+    "removed_invalid": 21,
+    "removed_duplicates": 1
   },
   "plants": [
     {
@@ -885,7 +881,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 10,
       "scientificName": "Catharanthus roseus",
       "commonName": "Pervenche de Madagascar",
       "nui": "",
@@ -992,7 +988,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 11,
       "scientificName": "Ixora coccinea",
       "commonName": "Ixora (Buis de Chine)",
       "nui": "",
@@ -1095,7 +1091,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 12,
       "scientificName": "Tecoma stans",
       "commonName": "Tecoma (Bois l'Enivresse)",
       "nui": "",
@@ -1197,7 +1193,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 13,
       "scientificName": "Allamanda cathartica",
       "commonName": "Allamanda",
       "nui": "",
@@ -1297,7 +1293,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 14,
       "scientificName": "Russelia equisetiformis",
       "commonName": "Russelia (Goutte de sang)",
       "nui": "",
@@ -1405,7 +1401,7 @@
       }
     },
     {
-      "id": 21,
+      "id": 15,
       "scientificName": "Lantana camara",
       "commonName": "Lantana",
       "nui": "",
@@ -1508,7 +1504,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 16,
       "scientificName": "Codiaeum variegatum",
       "commonName": "Croton",
       "nui": "",
@@ -1609,7 +1605,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 17,
       "scientificName": "Nerium oleander",
       "commonName": "Laurier Rose",
       "nui": "",
@@ -1715,7 +1711,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 18,
       "scientificName": "Coccoloba uvifera",
       "commonName": "Raisinier bord de mer",
       "nui": "",
@@ -1823,7 +1819,7 @@
       }
     },
     {
-      "id": 33,
+      "id": 19,
       "scientificName": "Bougainvillea glabra",
       "commonName": "Bougainvillier",
       "nui": "",
@@ -1924,7 +1920,7 @@
       }
     },
     {
-      "id": 41,
+      "id": 20,
       "scientificName": "Sansevieria cylindrica",
       "commonName": "Sansevière (Langue de belle-mère)",
       "nui": "",
@@ -2028,7 +2024,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 21,
       "scientificName": "Plumeria pudica",
       "commonName": "Frangipanier (Pudica)",
       "nui": "",
@@ -2127,7 +2123,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 22,
       "scientificName": "Guaiacum officinale",
       "commonName": "Gaïac",
       "nui": "",
@@ -2235,7 +2231,7 @@
       }
     },
     {
-      "id": 48,
+      "id": 23,
       "scientificName": "Licuala grandis",
       "commonName": "Licuala (Palmier Cuillère)",
       "nui": "",
@@ -2335,7 +2331,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 24,
       "scientificName": "Veitchia merrillii",
       "commonName": "Palmier royal nain",
       "nui": "",
@@ -2438,7 +2434,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 25,
       "scientificName": "Amherstia nobilis",
       "commonName": "Amherstia (Arbre aux orchidées)",
       "nui": "",
@@ -2536,7 +2532,7 @@
       }
     },
     {
-      "id": 103,
+      "id": 26,
       "scientificName": "Agave karatto",
       "commonName": "Agave (Langue de Bœuf)",
       "nui": "",
@@ -2636,7 +2632,7 @@
       }
     },
     {
-      "id": "4_1",
+      "id": 27,
       "scientificName": "Alternanthera coidea",
       "commonName": "Alternanthera",
       "nui": "",
@@ -2685,179 +2681,7 @@
       }
     },
     {
-      "id": 10,
-      "scientificName": "Tradescan a",
-      "commonName": "Tradescan a viole e",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "11_1",
-      "scientificName": "Madagascar blanche",
-      "commonName": "Pervenche de",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "4_2",
-      "scientificName": "Allamanda",
-      "commonName": "Allamanda jaune",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Data to be verified through botanical sources for Allamanda cathar Kingdom: Plantae. Class: Dicotyledonae. Family: Apocynaceae.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461078108/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461078108/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461078082/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461417248/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461603534/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/463501807/original.jpeg"
-        ],
-        "source": "GBIF - airish11, emilyalbs",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 3169834
-      },
-      "trefle": {
-        "id": 249310,
-        "family": {
-          "id": 56,
-          "name": "Apocynaceae",
-          "common_name": null,
-          "slug": "apocynaceae",
-          "links": {
-            "self": "/api/v1/families/apocynaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/apocynaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 11537,
-          "name": "Allamanda",
-          "slug": "allamanda",
-          "links": {
-            "self": "/api/v1/genus/allamanda",
-            "plants": "/api/v1/genus/allamanda/plants",
-            "species": "/api/v1/genus/allamanda/species",
-            "family": "/api/v1/families/apocynaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "5_1",
+      "id": 28,
       "scientificName": "Calliandra haematocephala",
       "commonName": "Calliandra rouge",
       "nui": "",
@@ -2945,7 +2769,7 @@
       }
     },
     {
-      "id": "6_1",
+      "id": 29,
       "scientificName": "Jatropha integerrima",
       "commonName": "Jatropha rouge",
       "nui": "",
@@ -3033,7 +2857,7 @@
       }
     },
     {
-      "id": "8_1",
+      "id": 30,
       "scientificName": "Plumbago auriculata",
       "commonName": "Plumbago bleu",
       "nui": "",
@@ -3121,7 +2945,7 @@
       }
     },
     {
-      "id": "9_1",
+      "id": 31,
       "scientificName": "Ruellia brittoniana",
       "commonName": "Ruellia bleue",
       "nui": "",
@@ -3209,7 +3033,7 @@
       }
     },
     {
-      "id": "11_2",
+      "id": 32,
       "scientificName": "Bignonia magnifica",
       "commonName": "Saritaea",
       "nui": "",
@@ -3297,7 +3121,7 @@
       }
     },
     {
-      "id": "12_1",
+      "id": 33,
       "scientificName": "Turnera ulmifolia",
       "commonName": "Turnera jaune",
       "nui": "",
@@ -3385,7 +3209,7 @@
       }
     },
     {
-      "id": "13_1",
+      "id": 34,
       "scientificName": "Mussaenda erythrophylla",
       "commonName": "Mussaenda rouge",
       "nui": "",
@@ -3473,7 +3297,7 @@
       }
     },
     {
-      "id": "15_1",
+      "id": 35,
       "scientificName": "Tricholoma joachimii",
       "commonName": "Bon a",
       "nui": "",
@@ -3522,7 +3346,7 @@
       }
     },
     {
-      "id": "18_1",
+      "id": 36,
       "scientificName": "Pandanus pygmaeus",
       "commonName": "Pandanus nain",
       "nui": "",
@@ -3610,7 +3434,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 37,
       "scientificName": "Chrysobalanus icaco",
       "commonName": "Icaco",
       "nui": "",
@@ -3698,7 +3522,7 @@
       }
     },
     {
-      "id": "21_1",
+      "id": 38,
       "scientificName": "Bambusa vulgaris",
       "commonName": "Bambou nain",
       "nui": "",
@@ -3786,7 +3610,7 @@
       }
     },
     {
-      "id": "2_1",
+      "id": 39,
       "scientificName": "Quisqualis indica",
       "commonName": "Quisqualis (Rangoon creeper)",
       "nui": "",
@@ -3874,49 +3698,7 @@
       }
     },
     {
-      "id": "3_1",
-      "scientificName": "Passi ora",
-      "commonName": "Passi ore",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "1_1",
+      "id": 40,
       "scientificName": "Dracaena marginata",
       "commonName": "Dracaena",
       "nui": "",
@@ -4003,7 +3785,7 @@
       }
     },
     {
-      "id": "2_2",
+      "id": 41,
       "scientificName": "Cordyline fruticosa terminalis",
       "commonName": "Cordyline",
       "nui": "",
@@ -4091,95 +3873,7 @@
       }
     },
     {
-      "id": "2_3",
-      "scientificName": "Aechmea blanchetiana",
-      "commonName": "Aechmea orange",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Verified as valid species: Aechmea blanchetiana Kingdom: Viridiplantae. Phylum: Streptophyta. Class: Magnoliopsida. Order: Poales. Family: Bromeliaceae.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461520839/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461520839/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462458674/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462458360/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462458306/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462458387/original.jpg"
-        ],
-        "source": "GBIF - Flávio Mendes, Stefano Caraco",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 2698340
-      },
-      "trefle": {
-        "id": 91223,
-        "family": {
-          "id": 98,
-          "name": "Bromeliaceae",
-          "common_name": null,
-          "slug": "bromeliaceae",
-          "links": {
-            "self": "/api/v1/families/bromeliaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/bromeliaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 4211,
-          "name": "Aechmea",
-          "slug": "aechmea",
-          "links": {
-            "self": "/api/v1/genus/aechmea",
-            "plants": "/api/v1/genus/aechmea/plants",
-            "species": "/api/v1/genus/aechmea/species",
-            "family": "/api/v1/families/bromeliaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "5_2",
+      "id": 42,
       "scientificName": "Furcraea foetida",
       "commonName": "Furcraea",
       "nui": "",
@@ -4267,130 +3961,7 @@
       }
     },
     {
-      "id": "5_3",
-      "scientificName": "Amhers a",
-      "commonName": "Amhers a noble",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      },
-      "trefle": {
-        "id": 289895,
-        "family": {
-          "id": 165,
-          "name": "Montiaceae",
-          "common_name": null,
-          "slug": "montiaceae",
-          "links": {
-            "self": "/api/v1/families/montiaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/montiaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 5955,
-          "name": "Lewisia",
-          "slug": "lewisia",
-          "links": {
-            "self": "/api/v1/genus/lewisia",
-            "plants": "/api/v1/genus/lewisia/plants",
-            "species": "/api/v1/genus/lewisia/species",
-            "family": "/api/v1/families/montiaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "2_5",
-      "scientificName": "Arachide fourragère",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "3_2",
+      "id": 43,
       "scientificName": "Cosmos sulfureux",
       "commonName": "",
       "nui": "",
@@ -4478,7 +4049,7 @@
       }
     },
     {
-      "id": "5_4",
+      "id": 44,
       "scientificName": "Begonia spec.",
       "commonName": "Bégonia",
       "nui": "",
@@ -4527,98 +4098,7 @@
       }
     },
     {
-      "id": "2_6",
-      "scientificName": "Massifs colorés,",
-      "commonName": "tailles/an ; désherbage",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "2_7",
-      "scientificName": "Tecoma jaune",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/460751303/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/460751303/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/460751440/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/460751374/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462259873/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462371358/original.jpg"
-        ],
-        "source": "GBIF - tess-oaktree",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 3172488
-      }
-    },
-    {
-      "id": "3_3",
+      "id": 45,
       "scientificName": "Eccremocarpus scaber",
       "commonName": "",
       "nui": "",
@@ -4706,512 +4186,7 @@
       }
     },
     {
-      "id": "4_3",
-      "scientificName": "Allamanda jaune",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461078108/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461078108/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461078082/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461417248/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461603534/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/463501807/original.jpeg"
-        ],
-        "source": "GBIF - airish11, emilyalbs",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 3169834
-      },
-      "trefle": {
-        "id": 249319,
-        "family": {
-          "id": 56,
-          "name": "Apocynaceae",
-          "common_name": null,
-          "slug": "apocynaceae",
-          "links": {
-            "self": "/api/v1/families/apocynaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/apocynaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 11537,
-          "name": "Allamanda",
-          "slug": "allamanda",
-          "links": {
-            "self": "/api/v1/genus/allamanda",
-            "plants": "/api/v1/genus/allamanda/plants",
-            "species": "/api/v1/genus/allamanda/species",
-            "family": "/api/v1/families/apocynaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "5_5",
-      "scientificName": "Calliandra rouge",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461568767/original.jpeg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461568767/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461568796/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461568809/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461568853/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461568880/original.jpeg"
-        ],
-        "source": "GBIF - Davidpc",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 2981784
-      }
-    },
-    {
-      "id": "6_2",
-      "scientificName": "Jatropha rouge",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461088699/original.jpeg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461088699/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461345715/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461345677/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461345696/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461689520/original.jpg"
-        ],
-        "source": "GBIF - Mariana Delgado-Fernández, Adrian Torres B.",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 3072692
-      }
-    },
-    {
-      "id": "8_2",
-      "scientificName": "Plumbago bleu",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      },
-      "trefle": {
-        "id": 128983,
-        "family": {
-          "id": 266,
-          "name": "Plumbaginaceae",
-          "common_name": null,
-          "slug": "plumbaginaceae",
-          "links": {
-            "self": "/api/v1/families/plumbaginaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/plumbaginaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 6649,
-          "name": "Plumbago",
-          "slug": "plumbago",
-          "links": {
-            "self": "/api/v1/genus/plumbago",
-            "plants": "/api/v1/genus/plumbago/plants",
-            "species": "/api/v1/genus/plumbago/species",
-            "family": "/api/v1/families/plumbaginaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "9_2",
-      "scientificName": "Ruellia bleue",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461085853/original.jpeg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461085853/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461061948/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461062392/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461062391/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461060455/original.jpg"
-        ],
-        "source": "GBIF - Sandra Palomino, Marco Polo amarillas vargas, djwu",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 5415469
-      }
-    },
-    {
-      "id": "12_2",
-      "scientificName": "Turnera jaune",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461247224/original.jpeg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461247224/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462326037/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462346810/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461848190/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461242066/original.jpeg"
-        ],
-        "source": "GBIF - yerbasanta, ssnp107-1, Jaana",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 2874846
-      }
-    },
-    {
-      "id": "13_2",
-      "scientificName": "Mussaenda rouge",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461826539/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461826539/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461826547/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462082540/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462082518/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462082528/original.jpeg"
-        ],
-        "source": "GBIF - mira_hlt, hiulamng3737",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 2892394
-      }
-    },
-    {
-      "id": 16,
-      "scientificName": "Bougainvillier compact",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "18_2",
-      "scientificName": "Pandanus nain",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/462089382/original.jpeg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462089382/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462089345/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462089411/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461463087/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/460880472/original.jpeg"
-        ],
-        "source": "GBIF - Peri Lee Pipkin",
-        "license": "CC BY 4.0",
-        "gbif_taxon_key": 8404076
-      }
-    },
-    {
-      "id": "21_2",
+      "id": 46,
       "scientificName": "Pogonatherum paniceum",
       "commonName": "",
       "nui": "",
@@ -5260,91 +4235,7 @@
       }
     },
     {
-      "id": "1_2",
-      "scientificName": "Bougainvillier grimpant",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "3_4",
-      "scientificName": "Passi ore",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      }
-    },
-    {
-      "id": "4_4",
+      "id": 47,
       "scientificName": "Secamone dilapidans",
       "commonName": "",
       "nui": "",
@@ -5393,88 +4284,7 @@
       }
     },
     {
-      "id": "5_6",
-      "scientificName": "Gri e",
-      "commonName": "",
-      "nui": "",
-      "source": "PDF-only",
-      "cultivation": {
-        "layer": "TBD",
-        "heightAdult": "TBD",
-        "sunExposure": [],
-        "waterNeeds": 0,
-        "windResistance": false,
-        "growthSpeed": "medium",
-        "plantingDensity": 0,
-        "maintenanceLevel": "TBD",
-        "beginnerFriendly": false
-      },
-      "appearance": {
-        "foliageColor": "TBD",
-        "floweringColor": "TBD",
-        "floweringMonth": "TBD"
-      },
-      "ecology": {
-        "soilCompatibility": [],
-        "environment": [],
-        "ecoBonus": []
-      },
-      "usage": [],
-      "toxicity": {
-        "level": 0,
-        "comment": "TBD"
-      },
-      "priceEstimate": 0.0,
-      "observations": "Data to be verified Note: Could not verify through botanical databases.",
-      "citationIds": [],
-      "images": {
-        "main": "",
-        "gallery": [],
-        "source": "",
-        "license": ""
-      },
-      "trefle": {
-        "id": 96398,
-        "family": {
-          "id": 126,
-          "name": "Caprifoliaceae",
-          "common_name": null,
-          "slug": "caprifoliaceae",
-          "links": {
-            "self": "/api/v1/families/caprifoliaceae",
-            "division_order": null,
-            "genus": "/api/v1/families/caprifoliaceae/genus"
-          }
-        },
-        "genus": {
-          "id": 4469,
-          "name": "Linnaea",
-          "slug": "linnaea",
-          "links": {
-            "self": "/api/v1/genus/linnaea",
-            "plants": "/api/v1/genus/linnaea/plants",
-            "species": "/api/v1/genus/linnaea/species",
-            "family": "/api/v1/families/caprifoliaceae"
-          }
-        },
-        "distribution": {},
-        "growth": {
-          "maximum_height": {},
-          "minimum_temperature": {},
-          "soil_humidity": [],
-          "light": 0,
-          "atmospheric_humidity": 0
-        },
-        "specifications": {
-          "toxicity": "",
-          "edible": false,
-          "growth_form": "",
-          "growth_habit": ""
-        }
-      }
-    },
-    {
-      "id": "6_3",
+      "id": 48,
       "scientificName": "Podranea ricasoliana",
       "commonName": "",
       "nui": "",
@@ -5562,7 +4372,7 @@
       }
     },
     {
-      "id": "2_8",
+      "id": 49,
       "scientificName": "Aechmea weilbachii",
       "commonName": "",
       "nui": "",
@@ -5650,7 +4460,7 @@
       }
     },
     {
-      "id": "3_5",
+      "id": 50,
       "scientificName": "Crinum spec.",
       "commonName": "Crinum",
       "nui": "",
@@ -5699,7 +4509,7 @@
       }
     },
     {
-      "id": "4_5",
+      "id": 51,
       "scientificName": "Pedilanthus thymaloides",
       "commonName": "Pédilanthus",
       "nui": "",
@@ -5747,7 +4557,7 @@
       }
     },
     {
-      "id": "1_3",
+      "id": 52,
       "scientificName": "Plumeria alba",
       "commonName": "",
       "nui": "",
@@ -5835,7 +4645,7 @@
       }
     },
     {
-      "id": "4_6",
+      "id": 53,
       "scientificName": "Roystonea regia",
       "commonName": "",
       "nui": "",
@@ -5923,7 +4733,7 @@
       }
     },
     {
-      "id": "plant_capraria_biflora_l.",
+      "id": 54,
       "scientificName": "Capraria biflora L.",
       "commonName": "Thé pays, Thé des anglais, Thé des Antilles, Thé de santé, Thé muraille, Dité péyi, Té péyi, Té miray",
       "nui": "nui_pla_00013",
@@ -5993,7 +4803,7 @@
       }
     },
     {
-      "id": "plant_eryngium_foetidum_l.",
+      "id": 55,
       "scientificName": "Eryngium foetidum L.",
       "commonName": "Chardon béni, Herbe à fer, Chadron béni, Chadwon béni",
       "nui": "nui_pla_00026",
@@ -6064,7 +4874,7 @@
       }
     },
     {
-      "id": "plant_justicia_pectoralis_jacq.",
+      "id": 56,
       "scientificName": "Justicia pectoralis Jacq.",
       "commonName": "Herbe charpentier, Zèb chapantié",
       "nui": "nui_pla_00036",
@@ -6094,7 +4904,7 @@
       }
     },
     {
-      "id": "plant_neurolaena_lobata_(l.)_cass.",
+      "id": 57,
       "scientificName": "Neurolaena lobata (L.) Cass.",
       "commonName": "Herbe-pique, Tabac diable, Herbe à pique, Fey-pik, Tabak-djab, Zèb a pik",
       "nui": "nui_pla_00044",
@@ -6125,7 +4935,7 @@
       }
     },
     {
-      "id": "plant_ocimum_gratissimum",
+      "id": 58,
       "scientificName": "Ocimum gratissimum",
       "commonName": "Framboisin, Fonbazen",
       "nui": "nui_pla_00045",
@@ -6195,7 +5005,7 @@
       }
     },
     {
-      "id": "plant_petiveria_alliacea_l.",
+      "id": 59,
       "scientificName": "Petiveria alliacea L.",
       "commonName": "Arada, Douvan nèg, Zèb senmitiè, Douvan douvan",
       "nui": "nui_pla_00048",
@@ -6227,7 +5037,7 @@
       }
     },
     {
-      "id": "plant_plectranthus_amboinicus_(lour.)_spreng.",
+      "id": 60,
       "scientificName": "Plectranthus amboinicus (Lour.) Spreng.",
       "commonName": "Gros thym, Gros baume, Gwo-ten, Gwo bom",
       "nui": "nui_pla_00049",
@@ -6258,7 +5068,7 @@
       }
     },
     {
-      "id": "plant_pluchea_carolinensis_(jacq.)_g._don",
+      "id": 61,
       "scientificName": "Pluchea carolinensis (Jacq.) G. Don",
       "commonName": "Tabac diable, Guérit-tout, Tabak jako, Djéri-tout, Tabak diab",
       "nui": "nui_pla_00050",
@@ -6289,42 +5099,7 @@
       }
     },
     {
-      "id": "plant_portulaca_oleracea_l.",
-      "scientificName": "Portulaca oleracea L.",
-      "commonName": "Pourpier, Koupié",
-      "nui": "nui_pla_00055",
-      "source": "CSV_plants",
-      "cultivation": {},
-      "appearance": {},
-      "ecology": {},
-      "usage": [],
-      "toxicity": {},
-      "priceEstimate": "",
-      "observations": "",
-      "citationIds": [
-        "nui_cit_00006",
-        "nui_cit_00007",
-        "nui_cit_00012",
-        "nui_cit_00016",
-        "nui_cit_00019",
-        "nui_cit_00030"
-      ],
-      "images": {
-        "main": "https://inaturalist-open-data.s3.amazonaws.com/photos/461129184/original.jpg",
-        "gallery": [
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461129184/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461129182/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/461129177/original.jpg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/462304157/original.jpeg",
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/460901204/original.jpg"
-        ],
-        "source": "GBIF - Tom Hunt",
-        "license": "CC BY-NC 4.0",
-        "gbif_taxon_key": 3084719
-      }
-    },
-    {
-      "id": "plant_psidium_guajava_l.",
+      "id": 62,
       "scientificName": "Psidium guajava L.",
       "commonName": "Goyavier, Goyave, Gwayav",
       "nui": "nui_pla_00056",
